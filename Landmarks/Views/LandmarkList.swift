@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct LandmarkList: View {
+    @State private var showFavoritesOnly = true // Display favorite state
+    
+    var filteredLandMarks: [Landmark] {
+        landmarks.filter { landmark in
+            (!showFavoritesOnly || landmark.isFavorite) // Filter Favorite landmarks
+        }
+    }
     var body: some View {
         NavigationSplitView{
-            List(landmarks) { landmark in
+            // Enable Filtered favorite landmarks
+            List(filteredLandMarks) { landmark in
                 NavigationLink {
                     LandmarkDetail(landmark: landmark)
                 } label: {
