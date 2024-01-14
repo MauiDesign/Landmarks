@@ -18,11 +18,15 @@ struct LandmarkList: View {
     var body: some View {
         NavigationSplitView{
             // Enable Filtered favorite landmarks
-            List(filteredLandMarks) { landmark in
-                NavigationLink {
-                    LandmarkDetail(landmark: landmark)
-                } label: {
-                    LandmarkRow(landmark: landmark)
+            List {
+                Toggle(isOn: $showFavoritesOnly) {
+                    Text("Favorites only")
+                }
+                ForEach(filteredLandMarks) { landmark in NavigationLink {
+                        LandmarkDetail(landmark: landmark)
+                    } label: {
+                        LandmarkRow(landmark: landmark)
+                    }
                 }
             }
             .navigationTitle("Landmarks")
