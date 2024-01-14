@@ -104,9 +104,9 @@
 		F26847A42B535862005BB26B /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
+				F26847A52B535862005BB26B /* LandmarksApp.swift */,
 				F26847DF2B536913005BB26B /* Resources */,
 				F26847DE2B5368DF005BB26B /* Model */,
-				F26847A52B535862005BB26B /* LandmarksApp.swift */,
 				F26847DD2B5368AF005BB26B /* Views */,
 				F26847A92B535863005BB26B /* Assets.xcassets */,
 				F26847AB2B535863005BB26B /* Preview Content */,
