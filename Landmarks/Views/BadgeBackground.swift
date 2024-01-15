@@ -40,8 +40,7 @@ struct BadgeBackground: View {
                             x: width * segment.control.x + xOffset,
                             y: height * segment.control.y
                         )
-                    )
-                    
+                    )   
                 }
             }
             .fill(.linearGradient(Gradient(colors: [Self.gradientStart, Self.gradientEnd]), startPoint: UnitPoint(x: 0.5, y: 0), endPoint: UnitPoint(x: 0.5, y: 0.6)
