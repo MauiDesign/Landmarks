@@ -29,7 +29,7 @@ struct HexagonParameters {
         ),
         Segment(
             line:    CGPoint(x: 0.00, y: 0.70 + adjustment),// Top-right (start curve vertex)
-            curve:   CGPoint(x: 0.05, y: 0.70 + adjustment),// Top-right (end curve vertex)
+            curve:   CGPoint(x: 0.05, y: 0.80 + adjustment),// Top-right (end curve vertex)
             control: CGPoint(x: 0.00, y: 0.75 + adjustment)
         ),
         Segment(
@@ -38,13 +38,13 @@ struct HexagonParameters {
             control: CGPoint(x: 0.50, y: 1.00)
         ),
         Segment(
-            line:    CGPoint(x: 0.95, y: 0.70 + adjustment),// top-left (start curve vertex)
-            curve:   CGPoint(x: 1.00, y: 0.00 + adjustment),// top-left (end curve vertex)
-            control: CGPoint(x: 1.00, y: 0.70 + adjustment)
+            line:    CGPoint(x: 0.95, y: 0.80 + adjustment),// top-left (start curve vertex)
+            curve:   CGPoint(x: 1.00, y: 0.70 + adjustment),// top-left (end curve vertex)
+            control: CGPoint(x: 1.00, y: 0.75 + adjustment)
         ),
         Segment(
             line:    CGPoint(x: 1.00, y: 0.30 + adjustment),// Botton-left (start curve vertex)
-            curve:   CGPoint(x: 0.95, y: 0.20 + adjustment),
+            curve:   CGPoint(x: 0.95, y: 0.20 + adjustment),// Top-left (start curve vertex)
             control: CGPoint(x: 1.00, y: 0.25 + adjustment)
         )
     ]
