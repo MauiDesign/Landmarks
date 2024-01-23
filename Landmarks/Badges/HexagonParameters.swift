@@ -14,7 +14,7 @@ struct HexagonParameters {
         let control: CGPoint
     }
     
-    static let adjustment:CGFloat = 0.085
+    static let adjustment:CGFloat = 0.087
     // Hexagon draw anti clock wise
     static let segments = [
         Segment(
