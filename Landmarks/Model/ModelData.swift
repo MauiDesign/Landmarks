@@ -7,7 +7,7 @@
 
 import Foundation
 @Observable
-class ModelData {
+final class ModelData: ObservableObject {
     var landmarks: [Landmark] = load("landmarkData.json")
     
     var hikes: [Hike] = load("hikeData.json")
